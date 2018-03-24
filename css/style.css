@@ -1,0 +1,91 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(../fonts/raleway-300.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(../fonts/raleway-400.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(../fonts/raleway-600.ttf) format('truetype');
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #212324;
+  z-index: -1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #797b7b;
+}
+
+.side {
+  visibility: hidden;
+  width: 0px
+}
+
+@media (min-width: 1120px) {
+  .side {
+    margin-left: -100px;
+    visibility: visible;
+    width: 80px
+  }
+}
+
+.eye {
+  margin-bottom: 500px;
+}
+
+.white {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+column {
+  margin-top: 10%;
+}
+
+button {
+  color: #fff;
+  white-space: normal;
+  height: auto
+}
+
+button:hover {
+  color: #aaa
+}
+
+button:focus {
+  color: #aaa
+}
+
+button:visited {
+  color: #aaa
+}
+
+.contact-spans {
+  letter-spacing: .5em;
+}
+
+.filler {
+  margin-bottom: 200px;
+}
+
+.filler-smol {
+  margin-bottom: 50px;
+}

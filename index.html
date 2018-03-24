@@ -1,46 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>Jibreil</title>
+  <meta name="description" content="My portfolio and general page">
+  <meta name="author" content="Jibreil">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/smooth-scroll.js" onload="window.$ = window.jQuery = module.exports;"></script>
+  <script src="js/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
   <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 </head>
-<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
   <div class="container">
-    <div class="row">
+
+    <div class="row eye" id="eye">
       <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+        <h1><i class="fa fa-space-shuttle side" aria-hidden="true"></i> Kingk22</h1>
+        <p>kingk22<br> Student and IT hobbyist</p>
+      </div>
+      <div class="column" style="margin-top: 8em">
+        <h1><a data-scroll href="#about" class="white"><i class="fa fa-angle-double-down side" style="margin-left: -2.5em;" aria-hidden="true"></i></a></h1>
       </div>
     </div>
+
+    <div class="row" id="about">
+      <div class="column" style="margin-top: 3em">
+        <h2><i class="fa fa-id-card-o side" aria-hidden="true"></i>About me</h2>
+        <p>I am a student from Australia with a strong interest in all things technology - both hardware and software - and cars. I've done some professional web development but all my other skills have come from and are used as a hobby.</p>
+
+        <p>Some of my skills include:</p>
+        <ul>
+          <li>web development</li>
+          <li>hardware and software troubleshooting and support</li>
+          <li>experience with various operating systems (windows, osx/macOS and various linux distributions)</li>
+          <li>linux server management</li>
+          <li>it project management</li>
+          <li>information systems and databases</li>
+          <li>communication systems</li>
+          <li>basic knowledge on automated manufacturing systems</li>
+          <ul>
+      </div>
+      <div class="column" style="margin-top: 3em">
+        <h1><a data-scroll href="#projects" class="white"><i class="fa fa-angle-double-down side" style="margin-left: -2.5em;" aria-hidden="true"></i></a></h1>
+      </div>
+    </div>
+
+    <div class="filler"></div>
+
+    <div class="row" id="projects">
+      <div class="column" style="margin-top: 3em">
+        <h2><i class="fa fa-code side" aria-hidden="true"></i>Projects</h2>
+        <div id="projects-contents" class="row">
+
+          <div class="one-half column">
+            <h3>Web development</h3>
+
+            <h4><a href="https://www.heavenlydelightscatering.com.au/">Heavenly Delights Catering</a></h4>
+            <p>I made a fairly simple website for Heavenly Delights Catering and look after most technical aspects of the business. <a href="https://jibreil.xyz/heavenlydelightscateringdev/">Dev site.</a></p>
+
+            <h4><a href="https://jibreil.xyz/site-prev/">Previous personal site</a></h4>
+            <p>Another simple site I made for personal use, my first attempt at a minimalistic site.</p>
+
+            <h4><a href="https://jibreil.xyz/start-tree/">Start-tree</a></h4>
+            <p>A browser startpage in a commandline tree style with links and a search bar. <a href="https://github.com/jibreil/start-tree">Source.</a></p>
+          </div>
+
+          <div class="one-half column">
+            <h3>Others</h3>
+
+            <h4><a href="https://github.com/jibreil/vnstat-alert/">vnStat Alert</a></h4>
+            <p>A python script to monitor data usage on a system/server, originally made to be used in a business environment, specific actions and an email alert can be set up to activate when the usage limit is reached.</p>
+
+            <h4>Rice (linux desktop art)</h4>
+            <p>Ricing is a word that refers to making visual customizations to a desktop. It comes from the practice of customizing slow cars to appear fast, also known as ricing. My latest rice can be seen in <a href="https://imgur.com/gallery/SEFe3">this gallery</a>              and the dotfiles (configuration files) can be found <a href="https://github.com/jibreil/dotfiles">here.</a></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="column" style="margin-top: 2em">
+        <h1><a data-scroll href="#contact" class="white"><i class="fa fa-angle-double-down side" style="margin-left: -2.5em;" aria-hidden="true"></i></a></h1>
+      </div>
+    </div>
+
+    <div class="filler"></div>
+
+    <div class="row" id="contact">
+      <div class="column" style="margin-top: 3em">
+        <h2><i class="fa fa-user-o side" aria-hidden="true"></i>Where you can find me</h2>
+        <h2 class="contact-spans">
+          <a href="https://github.com/jibreil"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://reddit.com/u/kingk22"><i class="fa fa-reddit" aria-hidden="true"></i></a><a href="mailto:jibreil.xyz@respectmyprivacy.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </h2>
+      </div>
+    </div>
+
+    <div class="filler"></div>
+
+    <footer>
+      <p>Website <del>stolen</del> borrowed from <a href="http://monoxane.com/">monoxane.</a></p>
+    </footer>
+
+    <div class="filler-smol"></div>
   </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
 </html>
