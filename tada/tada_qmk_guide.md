@@ -21,7 +21,7 @@ For Linux, the only prerequisite required is `git` so install it via the followi
 First, we want to download the QMK files by cloning them, simply run
 
 ```bash
-git clone clone https://github.com/qmk/qmk_firmware.git
+git clone https://github.com/qmk/qmk_firmware.git
 ```
 
 Now go into the QMK folder with 
@@ -74,7 +74,7 @@ To generate the `.bin` file, just run the following command within the QMK root 
 make tada68:<name>:flashbin
 ```
 
-Where `<name>` is the name of the directory you created in step 2, following from our example where the name of the foler was `clack` you would run `make tada68:clack:flashbin`.
+Where `<name>` is the name of the directory you created in step 2, following from our example where the name of the folder was `clack` you would run `make tada68:clack:flashbin`.
 
 ![clack](clack.png)
 
@@ -84,6 +84,6 @@ If there is an issue with your layout you'll get an error after the make command
 
 ## Step 4: loading your layout onto your keyboard
 
-To get your layout onto your keyboard, plug it in and press the reset switch, it should show up as a removable device and you'll find a `.bin` file already on it with the default layout, the board only has enough storage for one layout os backup this file somewhere on your computer and replave it with the `.bin` file created in step 3.
+To get your layout onto your keyboard, plug it in and press the reset switch, it should show up as a removable device and you'll find a `.bin` file already on it with the default layout, the board only has enough storage for one layout so backup this file somewhere on your computer and replave it with the `.bin` file created in step 3.
 
 When the new layout file is on the board, press escape to get the board out of the bootloader mode and it ***should*** be working on the new layout.
