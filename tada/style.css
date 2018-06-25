@@ -493,8 +493,8 @@ blockquote {
 
 body {
   font-family: 'Source Sans Pro', Avenir, sans-serif;
-  background-color: #3c3d46;
-  color: #7d7d7a;
+  background-color: #263238;
+  color: #eceff1;
   margin-bottom: 2.4rem; /* Visual tweak */
 }
 
@@ -504,12 +504,12 @@ body {
 
 h1 {
   font-family: 'Brush Up Too', 'Source Sans Pro', Avenir, sans-serif;
-  color: #e6ceaa;
+  color: #ef5350;
 }
 
 h2,
 h3 {
-  color: #b98552;
+  color: #ef5350;
   text-transform: uppercase;
 }
 
@@ -563,16 +563,16 @@ tbody tr:nth-child(odd) {
 
 code {
   font-size: 75%; /* Matching better Source Sans  */
-  color: #3c3d46;
-  background-color: #7d7d7a;
+  color: #ffffff;
+  background-color: #ff5252;
 }
 
 pre {
-  background-color: rgba(60,75,94,0.5);
+  background-color: #ff5252;
 }
 
 pre code {
-  color: #7d7d7a;
+  color: #ffffff;
 }
 
 hr {
