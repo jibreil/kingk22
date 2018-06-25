@@ -564,11 +564,11 @@ tbody tr:nth-child(odd) {
 code {
   font-size: 75%; /* Matching better Source Sans  */
   color: #eceff1;
-  background-color: #ff5252;
+  background-color: #515A5F;
 }
 
 pre {
-  background-color: #ff5252;
+  background-color: #515A5F;
 }
 
 pre code {
