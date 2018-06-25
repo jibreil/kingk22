@@ -2,7 +2,53 @@
 
 ## Step 1: setup QMK
 
-Follow the instructions in the [QMK docs](https://docs.qmk.fm/#/newbs_getting_started) to setup your QMK environment, by the end of this step you should have all the dependencies installed and a folder with all the QMK stuff.
+### Environment setup
+
+#### Windows
+
+For Windows, follow the instructions [here in the documentation](https://docs.qmk.fm/#/newbs_getting_started?id=windows) as the method used for QMK on Windows changes every now and then.
+
+#### Linux
+
+For Linux, the only prerequisite required is `git` so install it via the following commands depending on your distribution:
+
+* Debian/Ubuntu: `apt-get install git`
+* Fedora/Redhat/Centos: `yum install git`
+* Arch: `pacman -S git`
+
+### QMK setup
+
+First, we want to download the QMK files by cloning them, simply run
+
+```bash
+git clone clone https://github.com/qmk/qmk_firmware.git
+```
+
+Now go into the QMK folder with 
+
+```bash
+cd qmk_firmware
+```
+
+Finally, QMK includes an easy setup script to finish the process so run it by typing the following from the `qmk_firmware` directory
+
+```bash
+./util/qmk_install.sh
+```
+
+![cloning](clone.png)
+
+Now we can test the QMK environment by building a layout, let's try the default TADA one
+
+```bash
+make tada68:default:flashbin
+```
+
+Which should give an output like this
+
+![test](test.png)
+
+If this test build goes well, we're ready to make a layout.
 
 ## Step 2: create/edit a layout
 
@@ -14,6 +60,8 @@ To make your own layout, copy the `default` folder and rename it to something el
 2. `readme.md`
 3. `rules.mk`
 
+![copy](copy.png)
+
 Out of those 3, the `readme.md` file is not required but is present by default, the `rules.mk` file contains advanced build options for QMK and for most users can be left alone. The `keymap.c` file is where the magic happens and in here you can edit the default layout to your own liking. Thorough instructions for editing this can also be found in the [QMK docs.](https://docs.qmk.fm/#/newbs_building_firmware)
 
 ## Step 3: build the firmware
@@ -22,11 +70,17 @@ The TADA68 is unique to most other mechanical keyboards in terms of putting your
 
 To generate the `.bin` file, just run the following command within the QMK root directory:
 
-```make tada68:<name>:flashbin```
+```bash
+make tada68:<name>:flashbin
+```
 
 Where `<name>` is the name of the directory you created in step 2, following from our example where the name of the foler was `clack` you would run `make tada68:clack:flashbin`.
 
+![clack](clack.png)
+
 If there is an issue with your layout you'll get an error after the make command. If there are no errors, you'll find a shiny new `.bin` file in the QMK root directory, following our example again we'll find `tada68_clack.bin` in the root directory. This is the file you'll need to put onto your board.
+
+![there](there.png)
 
 ## Step 4: loading your layout onto your keyboard
 
