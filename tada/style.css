@@ -563,7 +563,7 @@ tbody tr:nth-child(odd) {
 
 code {
   font-size: 75%; /* Matching better Source Sans  */
-  color: #ffffff;
+  color: #eceff1;
   background-color: #ff5252;
 }
 
@@ -572,7 +572,7 @@ pre {
 }
 
 pre code {
-  color: #ffffff;
+  color: #eceff1;
 }
 
 hr {
