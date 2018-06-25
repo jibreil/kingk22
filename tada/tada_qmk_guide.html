@@ -20,7 +20,7 @@
     <h3 id="qmk-setup">QMK setup</h3>
     <p>First, we want to download the QMK files by cloning them, simply run</p>
     <div class="sourceCode" id="cb1">
-        <pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">git</span> clone clone https://github.com/qmk/qmk_firmware.git</a></code></pre>
+        <pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">git</span> clone https://github.com/qmk/qmk_firmware.git</a></code></pre>
     </div>
     <p>Now go into the QMK folder with</p>
     <div class="sourceCode" id="cb2">
@@ -32,7 +32,7 @@
     </div>
     <figure>
         <img src="clone.png" alt="cloning" />
-        <figcaption>cloning</figcaption>
+        <figcaption>cloning qmk files and running setup</figcaption>
     </figure>
     <p>Now we can test the QMK environment by building a layout, let’s try the default TADA one</p>
     <div class="sourceCode" id="cb4">
@@ -41,7 +41,7 @@
     <p>Which should give an output like this</p>
     <figure>
         <img src="test.png" alt="test" />
-        <figcaption>test</figcaption>
+        <figcaption>running a test build</figcaption>
     </figure>
     <p>If this test build goes well, we’re ready to make a layout.</p>
     <h2 id="step-2-createedit-a-layout">Step 2: create/edit a layout</h2>
@@ -54,7 +54,7 @@
     </ol>
     <figure>
         <img src="copy.png" alt="copy" />
-        <figcaption>copy</figcaption>
+        <figcaption>copying the default layout</figcaption>
     </figure>
     <p>Out of those 3, the <code>readme.md</code> file is not required but is present by default, the <code>rules.mk</code> file contains advanced build options for QMK and for most users can be left alone. The <code>keymap.c</code> file is where the magic happens and in here you can edit the default layout to your own liking. Thorough instructions for editing this can also be found in the <a href="https://docs.qmk.fm/#/newbs_building_firmware">QMK docs.</a></p>
     <h2 id="step-3-build-the-firmware">Step 3: build the firmware</h2>
@@ -63,17 +63,17 @@
     <div class="sourceCode" id="cb5">
         <pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="fu">make</span> tada68:<span class="op">&lt;</span>name<span class="op">&gt;</span>:flashbin</a></code></pre>
     </div>
-    <p>Where <code>&lt;name&gt;</code> is the name of the directory you created in step 2, following from our example where the name of the foler was <code>clack</code> you would run <code>make tada68:clack:flashbin</code>.</p>
+    <p>Where <code>&lt;name&gt;</code> is the name of the directory you created in step 2, following from our example where the name of the folder was <code>clack</code> you would run <code>make tada68:clack:flashbin</code>.</p>
     <figure>
         <img src="clack.png" alt="clack" />
-        <figcaption>clack</figcaption>
+        <figcaption>building the new firmware</figcaption>
     </figure>
     <p>If there is an issue with your layout you’ll get an error after the make command. If there are no errors, you’ll find a shiny new <code>.bin</code> file in the QMK root directory, following our example again we’ll find <code>tada68_clack.bin</code> in the root directory. This is the file you’ll need to put onto your board.</p>
     <figure>
         <img src="there.png" alt="there" />
-        <figcaption>there</figcaption>
+        <figcaption>new firmware file</figcaption>
     </figure>
     <h2 id="step-4-loading-your-layout-onto-your-keyboard">Step 4: loading your layout onto your keyboard</h2>
-    <p>To get your layout onto your keyboard, plug it in and press the reset switch, it should show up as a removable device and you’ll find a <code>.bin</code> file already on it with the default layout, the board only has enough storage for one layout os backup this file somewhere on your computer and replave it with the <code>.bin</code> file created in step 3.</p>
+    <p>To get your layout onto your keyboard, plug it in and press the reset switch, it should show up as a removable device and you’ll find a <code>.bin</code> file already on it with the default layout, the board only has enough storage for one layout so backup this file somewhere on your computer and replave it with the <code>.bin</code> file created in step 3.</p>
     <p>When the new layout file is on the board, press escape to get the board out of the bootloader mode and it <strong><em>should</em></strong> be working on the new layout.</p>
 </body>
