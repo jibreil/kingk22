@@ -1,5 +1,7 @@
 # Guide to creating a layout in QMK for the TADA68
 
+The TADA68 can be programmed using [Easy AVR](https://github.com/dhowland/EasyAVR) which provides a simple gui and can generate the required `.bin` file for the TADA68 but it is not as configurable as QMK nor does it have as many features and keycodes as QMK. Because of this, some people may opt to use QMK for their keyboard if Easy AVR does not have functionality that they require and this guide will outline how to do this.
+
 ## Step 1: setup QMK
 
 ### Environment setup
