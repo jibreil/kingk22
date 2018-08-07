@@ -1,12 +1,12 @@
-baseurl = "https://example.org/"
+baseurl = "https://kingk22.xyz/"
 languageCode = "en-us"
-title = "Hello Friend"
+title = "Kingk22"
 theme = "hello-friend"
-copyright = ""
+copyright = "©"
 paginate = 5
 
 [params]
-  subtitle = "A simple theme for Hugo"
+  subtitle = "Hello Friend"
   icon = "favicon.png"
 
 # [params.logo]
