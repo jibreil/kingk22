@@ -45,7 +45,7 @@ Finally, QMK includes an easy setup script to finish the process so run it by ty
 ./util/qmk_install.sh
 ```
 
-![cloning qmk files and running setup](clone.png)
+![cloning qmk files and running setup](img/clone.png)
 
 Now we can test the QMK environment by building a layout, let's try the default TADA one
 
