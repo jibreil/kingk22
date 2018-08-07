@@ -2,7 +2,7 @@ baseurl = "https://kingk22.xyz/"
 languageCode = "en-us"
 title = "Kingk22"
 theme = "hello-friend"
-copyright = "©"
+copyright = ""
 paginate = 5
 
 [params]
