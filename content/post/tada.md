@@ -4,8 +4,7 @@ date = "2018-06-26"
 author = "Jibreil"
 cover = "tada.png"
 description = "A guide to creating a layout for and flashing the TADA68 with QMK"
-categories = ["keyboards"]
-tags = ["keyboards"]
+tags = ["keyboards", "programming"]
 +++
 
 # Guide to creating a layout in QMK for the TADA68
