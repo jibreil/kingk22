@@ -1,14 +1,14 @@
 :root {
-  --dark-background: #222222;
-  --dark-background-secondary: #3b3d42;
-  --dark-border-color: #4a4b50;
-  --dark-color: #CBCCD2;
-  --dark-color-secondary: #73747b;
-  --light-background: #fff;
-  --light-background-secondary: #eaeaea;
-  --light-border-color: #dcdcdc;
-  --light-color: #222;
-  --light-color-secondary: #999;
+  --light-background: #222222;
+  --light-background-secondary: #3b3d42;
+  --light-border-color: #4a4b50;
+  --light-color: #CBCCD2;
+  --light-color-secondary: #73747b;
+  --dark-background: #fff;
+  --dark-background-secondary: #eaeaea;
+  --dark-border-color: #dcdcdc;
+  --dark-color: #222;
+  --dark-color-secondary: #999;
   --phoneWidth: (max-width:684px);
   --tabletWidth: (max-width:900px)
 }
@@ -80,7 +80,7 @@
   -webkit-appearance: none;
   align-items: center;
   appearance: none;
-  background: #eaeaea;
+  background: #3b3d42;
   background: var(--light-background-secondary);
   border: 1px solid transparent;
   border-radius: 8px;
@@ -97,21 +97,21 @@
 }
 
 .dark-theme .button, .dark-theme a.button, .dark-theme button {
-  background: #3b3d42;
+  background: #eaeaea;
   background: var(--dark-background-secondary);
   color: inherit
 }
 
 .button.outline, a.button.outline, button.outline {
   background: transparent;
-  border-color: #eaeaea;
+  border-color: #3b3d42;
   border-color: var(--light-background-secondary);
   box-shadow: none;
   padding: 8px 18px
 }
 
 .dark-theme .button.outline, .dark-theme a.button.outline, .dark-theme button.outline {
-  border-color: #3b3d42;
+  border-color: #eaeaea;
   border-color: var(--dark-background-secondary);
   color: inherit
 }
@@ -159,7 +159,7 @@ a.read-more, a.read-more:active, a.read-more:hover {
 
 .header {
   align-items: center;
-  background: #fafafa;
+  background: #151718;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -167,7 +167,7 @@ a.read-more, a.read-more:active, a.read-more:hover {
 }
 
 .dark-theme .header {
-  background: #151718
+  background: #fafafa
 }
 
 .header .bulb-on {
@@ -254,13 +254,13 @@ a.read-more, a.read-more:active, a.read-more:hover {
 }
 
 .menu {
-  background: #fafafa;
+  background: #151718;
   border-right: 1px solid;
   margin-right: 10px
 }
 
 .dark-theme .menu {
-  background: #151718
+  background: #fafafa
 }
 
 @media (max-width:683px) {
@@ -339,9 +339,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
-  background-color: #fff;
+  background-color: #222;
   background-color: var(--light-background);
-  color: #222;
+  color: #CBCCD2;
   color: var(--light-color);
   font-family: Inter UI, -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial, sans-serif;
   font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
@@ -359,9 +359,9 @@ body {
 }
 
 body.dark-theme {
-  background-color: #222222;
+  background-color: #fff;
   background-color: var(--dark-background);
-  color: #CBCCD2;
+  color: #222;
   color: var(--dark-color)
 }
 
@@ -412,7 +412,7 @@ img {
 }
 
 code {
-  background: #eaeaea;
+  background: #3b3d42;
   background: var(--light-background-secondary);
   border-radius: 5px;
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
@@ -422,7 +422,7 @@ code {
 }
 
 .dark-theme code {
-  background: #3b3d42;
+  background: #eaeaea;
   background: var(--dark-background-secondary)
 }
 
@@ -517,7 +517,7 @@ ol ol {
 }
 
 hr {
-  background: #dcdcdc;
+  background: #4a4b50;
   background: var(--light-border-color);
   border: none;
   height: 1px;
@@ -525,7 +525,7 @@ hr {
 }
 
 .dark-theme hr {
-  background: #4a4b50;
+  background: #dcdcdc;
   background: var(--dark-border-color)
 }
 
@@ -548,12 +548,12 @@ hr {
 }
 
 .post:not(:last-of-type) {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid #4a4b50;
   border-bottom: 1px solid var(--light-border-color)
 }
 
 .dark-theme .post:not(:last-of-type) {
-  border-color: #4a4b50;
+  border-color: #dcdcdc;
   border-color: var(--dark-border-color)
 }
 
@@ -641,9 +641,9 @@ hr {
 }
 
 .pagination__title-h {
-  background: #fff;
+  background: #222;
   background: var(--light-background);
-  color: #999;
+  color: #73747b;
   color: var(--light-color-secondary);
   font-size: .8rem;
   letter-spacing: .1em;
@@ -656,9 +656,9 @@ hr {
 }
 
 .dark-theme .pagination__title-h {
-  background: #222222;
+  background: #fff;
   background: var(--dark-background);
-  color: #73747b;
+  color: #999;
   color: var(--dark-color-secondary)
 }
 
