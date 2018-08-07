@@ -5,7 +5,7 @@
     <title>{{ if .IsHome }}{{ $.Site.Title }}{{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}{{ end }}</title>
   {{ end }}
   {{ partial "head.html" . }}
-  <link rel="icon" href="{{ .Site.Params.Icon }}"><Paste>
+  <link rel="icon" href="{{ .Site.Params.Icon }}">
 </head>
 <body>
 <div class="container">
