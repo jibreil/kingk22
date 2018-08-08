@@ -7,6 +7,10 @@ description = "A guide to creating a layout for and flashing the TADA68 with QMK
 tags = ["keyboards", "programming"]
 +++
 
+> Thanks to [Mechanical Keyboard Info](https://mechanicalkeyboardinfo.com/) for the cover image.
+
+---
+
 The TADA68 can be programmed using [EasyAVR](https://github.com/dhowland/EasyAVR) which provides a simple GUI and can generate the required `.bin` file for the TADA68 but it is not as configurable as QMK nor does it have as many features and keycodes as QMK. Because of this, some people may opt to use QMK for their keyboard if EasyAVR does not have functionality that they require and this guide will outline how to do this.
 
 ## Step 1: Setup QMK
@@ -15,7 +19,7 @@ The TADA68 can be programmed using [EasyAVR](https://github.com/dhowland/EasyAVR
 
 #### Windows
 
-For Windows, follow the instructions [here in the documentation](https://docs.qmk.fm/#/newbs_getting_started?id=windows) as the method used for QMK on Windows changes every now and then.
+For Windows, follow the instructions [here in the documentation](https://docs.qmk.fm/#/newbs_getting_started?id=windows) as the method used for QMK on Windows changes as better tools are developed and old ones retired.
 
 #### Linux
 
@@ -75,7 +79,7 @@ Out of those 3, the `readme.md` file is not required but is present by default, 
 
 ## Step 3: build the firmware
 
-The TADA68 is unique to most other mechanical keyboards in terms of putting your own layout on it as you drop a `.bin` file on the keyboard as if it was a regular mass storage device rather than flashing a `.hex` file to the controller.
+The TADA68 is unique to most other mechanical keyboards in terms of putting your own layout on it as you place a `.bin` file on the keyboard as if it was a regular mass storage device rather than flashing a `.hex` file to the controller.
 
 To generate the `.bin` file, just run the following command within the QMK root directory:
 
@@ -95,4 +99,4 @@ If there is an issue with your layout you'll get an error after the make command
 
 To get your layout onto your keyboard, plug it in and press the reset switch, it should show up as a removable device and you'll find a `.bin` file already on it with the default layout, the board only has enough storage for one layout so backup this file somewhere on your computer and replace it with the `.bin` file created in step 3.
 
-When the new layout file is on the board, press escape to get the board out of the bootloader mode and it ***should*** be working on the new layout.<Paste>
+When the new layout file is on the board, press escape to get the board out of the bootloader mode and it ***should*** be working on the new layout.
