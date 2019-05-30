@@ -253,6 +253,10 @@ body {
 	color: #ffffff;
 }
 
+.iconLast {
+	margin-left: 1em;
+}
+
 body,
 input,
 select,
